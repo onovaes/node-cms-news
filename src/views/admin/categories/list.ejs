@@ -1,0 +1,58 @@
+<%- include('../partials/header.ejs')  %>
+
+<div class="container">
+
+    <%- include('../partials/modals.ejs')  %>
+      
+    <div class="card mt-4">
+        <div class="card-header">
+            <h2><a href="<%=url%>">Categories</a> (<%=categories.count%>)
+                <a class="btn btn-outline-primary float-right" href="<%=url%>new/" title="Create a New Categorie" role="button">Create</a>
+            </h2>
+        </div>
+    </div>
+
+
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Slug</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% categories.rows.forEach(category => { %>
+                <tr>
+                    <th scope="row"><%= category.id %></th>
+                    <td><%= category.title %></td>
+                    <td><%= category.slug %></td>
+                    <td>
+                        <!--<button class="btn btn-warning">Edit</button>-->
+                        
+                        <form action="<%=url%>delete" id="formEdit<%=category.id %>" method="POST" style="display: inline;">
+                            <input type="hidden" name="id" value="<%=category.id %>">
+                            <button onClick="confirmDeleteModal('<%=category.id %>')" class="btn btn-danger">Del</button> 
+                        </form>
+                    </td>
+                </tr>
+            <% }) %>
+
+            <% if (categories.count == 0) { %>
+                <tr>
+                    <td colspan="4" class="text-center">No data</td>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+
+    
+    <%- include('../../partials/pagination.ejs', {
+        page: page,
+        url: url
+    }); %>
+      
+</div>
+
+<%- include('../../partials/footer.ejs')  %>
