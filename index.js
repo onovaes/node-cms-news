@@ -1,29 +1,38 @@
+
 const express = require("express")
 const app = express()
+const bodyParser = require("body-parser");
+
 const port =  process.env.PORT || 3000;
 
-
-// set view enginge
 app.set('view engine','ejs')
 app.use(express.static('public'))
 
+app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.json())
 
+
+
+
+// HOME
 app.get("/", function(req,res){
     res.render('index')
 })
 
+// ADMIN
+app.get("/admin", function(req,res){
+    res.render('admin/index')
+})
 
-
-// app.get("/sobre/:nome", function(req,res){ 
-//     res.sendFile(__dirname + '/html/index.html')
-//     console.log(req.params.nome);
-// })
-
-// // Exemplo com queri string 
-// app.get("/ola", function(req,res){
+// ADMIN
+app.post("/admin/salvar-noticia", function(req,res){
+    var titulo = req.body.titulo;
+    var descricao = req.body.descricao;
     
-//     var nome = req.query.teste
-//     res.send('olahhh' + nome)
-// } )
+    res.send('titulo: ' + titulo + ' <Br>----descricao: '+ descricao)
+})
 
-app.listen(port, function() { console.log("Servidor rodando na http://localhost:"+port) })  
+
+app.listen(port, function() { 
+    console.log("Servidor rodando na http://localhost:"+port) 
+})  
