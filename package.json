@@ -1,16 +1,9 @@
 {
-  "name": "primeiraaula",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "dependencies": {
-    "express": "^4.17.2"
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index"
-  },
-  "author": "gabriel novaes",
-  "license": "ISC"
+    "start":"node index.js"
+  }
 }

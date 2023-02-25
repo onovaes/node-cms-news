@@ -1,0 +1,32 @@
+<%- include('partials/header.ejs') %>
+
+<body>
+
+    <%- include('partials/navbar.ejs') %>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container ">
+            <h1 class="display-4">Últimas Notícias</h1>
+            <p class="lead">Confira as últimas notícias sobre política, esportes, entretenimento e economia.</p>
+        </div>
+    </div>
+
+    <!-- Cards de Notícias -->
+    <div class="container">
+        <div class="row">
+            <%- include('partials/card_news.ejs') %>
+            <%- include('partials/card_news.ejs') %>
+            <%- include('partials/card_news.ejs') %>
+        </div>
+
+        <div class="row">
+            <%- include('partials/card_news.ejs') %>
+            <%- include('partials/card_news.ejs') %>
+            <%- include('partials/card_news.ejs') %>
+        </div>
+    </div>
+    <!-- // Cards de Notícias -->
+        
+</body>
+<%- include('partials/footer.ejs') %>
