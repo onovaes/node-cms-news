@@ -52,6 +52,7 @@ Se você quiser contribuir para este projeto, por favor siga estas etapas:
 ### TO-DOs
 
 - [ ] Seed to categories 
+- [ ] Fix Categories Crud CRUD
 - [ ] Article CRUD
 - [ ] Show message when no rows in categories
 - [ ] Split controller code to services and routes.
