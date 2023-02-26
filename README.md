@@ -1,16 +1,16 @@
 # Node CMS News
 
-Este é um aplicativo de site de notícias criado com Node.js e Express para curiosidades e testes gerais.
+This is a news site app built with Node.js and Express for trivia and general testing.
 
-## Instalação
+## Instalation
 
-### Para executar este aplicativo, siga estas etapas:
+### To run this app, follow these steps:
 
-  1. Certifique-se de ter o Node.js e o NPM instalados em seu computador.
-  1. Clone este repositório para o seu computador.
-  1. Na linha de comando, navegue até o diretório raiz do aplicativo e execute o comando npm install para instalar as dependências necessárias e npm start para iniciar o servidor web.
+1. Make sure you have Node.js and NPM installed on your computer.
+1. Clone this repository to your computer.
+1. On the command line, navigate to the root directory of the application and run the npm install command to install the required dependencies and npm start to start the web server.
 
-  O aplicativo agora deve estar sendo executado em http://localhost:3000.
+  The application should now be running on 
 
   ```console
   # Install the dependencies
@@ -20,44 +20,40 @@ Este é um aplicativo de site de notícias criado com Node.js e Express para cur
   npm start
   ```
 
-## Funcionalidades
+## Features
 
-### Este aplicativo possui as seguintes funcionalidades:
+### This application has the following features:
 
-  - [ ] Visualização de notícias em diferentes categorias (política, esportes, entretenimento, economia).
-  - [ ] Criação, edição e exclusão de notícias para usuários autenticados.
-  - [ ] Autenticação de usuário com e-mail e senha.
-  - [ ] Proteção de rotas para usuários autenticados usando autenticação de sessão.
+  - [x] CRUD Categories
+  - [ ] CRUD Posts
+  - [ ] Visualization of news in different categories (politics, sports, entertainment, economy) in home
+  - [ ] Creating, editing and deleting news for authenticated users.
+  - [ ] User authentication and autorization with email and password.
 
-## Tecnologias
+## Technologies
 
-Este aplicativo foi criado usando as seguintes tecnologias:
+This app was created using the following technologies:
 
-    1. Node.js
-    1. Express
-    1. EJS
-    1. MySql
-    1. Bootstrap
+1. Node.js
+1. Express
+1. EJS
+1. MySQL
+1. Bootstrap in Admin frontend
+1. Tailwind in Admin frontend
 
-## Contribuindo
+## Contributing
 
-Se você quiser contribuir para este projeto, por favor siga estas etapas:
+If you want to contribute to this project, please follow these steps:
 
-  1. Faça um fork deste repositório.
-  1. Crie um novo branch com suas modificações: git checkout -b minha-modificacao
-  1. Commit suas modificações: git commit -m 'Adicionando novas funcionalidades'
-  1. Push para o branch criado: git push origin minha-modificacao
-  1. Crie um pull request para este repositório principal.
+  1. Fork this repository.
+  1. Create a new branch with your modifications: git checkout -b my-modification
+  1. Commit your changes: git commit -m 'Adding new features'
+  1. Push to the created branch: git push origin my-modification
+  1. Create a pull request for this main repository.
+
 
 ### TO-DOs
 
-- [ ] Fix Categories Crud CRUD (EXCLUDE, SLUG ... )
-- [ ] Seed to categories 
-
-- [ ] Article CRUD
-- [ ] Split controller code to services and routes.
-- [ ] Transform pagination to be used in others controllers
-- [ ] Use a config file to store variables. Add instrucion to Readme.md
-- [ ] Edit Categorie logic and views
-- [ ] Unit Test
-- [ ] Favicon
+- [ ] Categories Edit
+- [ ] Categories as Page like wordpress domain
+- [ ] Seeding and migrations to categories 
