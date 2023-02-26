@@ -2,21 +2,14 @@
 const express = require("express")
 const app = express()
 const bodyParser = require("body-parser");
-
 const connection = require("./src/config/db.config")
-
-// const Sequelize = require('sequelize')
-// const sequelize = new Sequelize({
-//     dialect: 'sqlite',
-//     storage: 'database.sqlite',
-//   });
-
-
 const port =  process.env.PORT || 3000;
 
+// CONTROLLERS
 const categoriesController = require("./src/controllers/categories.controllers")
 const articlesController = require("./src/controllers/articles.controllers")
 
+// MODELS
 const Article = require("./src/models/article.models")
 const Category = require("./src/models/category.models")
 
@@ -29,7 +22,7 @@ app.use(express.static('public'))
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json())
 
-
+// USE CONTROLLERS
 app.use("/",categoriesController);
 app.use("/",articlesController);
 
@@ -42,7 +35,6 @@ app.get("/admin", function(req,res){
 
 // HOME GAZETA DOS DEVS
 app.get("/", function(req,res){
-
     Category.findAll().then(categories => {
         res.render('index', { categories });
     }).catch(error => {

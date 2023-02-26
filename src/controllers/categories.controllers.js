@@ -14,7 +14,7 @@ router.get("/admin/categories",(req,res) => {
         page = req.query.page
 
     let offset = 0
-    let itemsPerPage = 10
+    let itemsPerPage = 5
     let next = false
     offset = (page - 1) * itemsPerPage 
 

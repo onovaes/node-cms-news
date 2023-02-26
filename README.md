@@ -1,6 +1,6 @@
 # Node CMS News
 
-Este é um aplicativo de site de notícias criado com Node.js e Express.
+Este é um aplicativo de site de notícias criado com Node.js e Express para curiosidades e testes gerais
 
 ## Instalação
 
@@ -51,10 +51,11 @@ Se você quiser contribuir para este projeto, por favor siga estas etapas:
 
 ### TO-DOs
 
+- [ ] Fiz Paginacao esta infinita 
+- [ ] Fix Categories Crud CRUD (EXCLUDE, SLUG ... )
 - [ ] Seed to categories 
-- [ ] Fix Categories Crud CRUD
+
 - [ ] Article CRUD
-- [ ] Show message when no rows in categories
 - [ ] Split controller code to services and routes.
 - [ ] Transform pagination to be used in others controllers
 - [ ] Use a config file to store variables. Add instrucion to Readme.md
