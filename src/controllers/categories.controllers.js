@@ -20,6 +20,7 @@ router.get("/admin/categories",(req,res) => {
 
 
     Category.findAndCountAll({
+        order: [['id', 'DESC']],
         limit:itemsPerPage,
         offset: offset
     }).then(categories => {
