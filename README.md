@@ -54,6 +54,6 @@ If you want to contribute to this project, please follow these steps:
 
 ### TO-DOs
 
-- [ ] Categories Edit
-- [ ] Categories as Page like wordpress domain
-- [ ] Seeding and migrations to categories 
+- [ ] Categories Edit BUG
+- [ ] Move Categories domain as Page like wordpress domain
+- [ ] Seeding and migrations to categories (Page)
