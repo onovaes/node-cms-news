@@ -1,6 +1,6 @@
 # Node CMS News
 
-Este é um aplicativo de site de notícias criado com Node.js e Express para curiosidades e testes gerais
+Este é um aplicativo de site de notícias criado com Node.js e Express para curiosidades e testes gerais.
 
 ## Instalação
 
@@ -51,7 +51,6 @@ Se você quiser contribuir para este projeto, por favor siga estas etapas:
 
 ### TO-DOs
 
-- [ ] Fiz Paginacao esta infinita 
 - [ ] Fix Categories Crud CRUD (EXCLUDE, SLUG ... )
 - [ ] Seed to categories 
 
