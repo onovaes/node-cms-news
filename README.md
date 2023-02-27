@@ -22,7 +22,7 @@ This is a news site app built with Node.js and Express for trivia and general te
 
 ## Features
 
-### This application has the following features:
+### Current Features:
 
   - [x] CRUD Categories
   - [ ] CRUD Posts
@@ -51,6 +51,11 @@ If you want to contribute to this project, please follow these steps:
   1. Push to the created branch: git push origin my-modification
   1. Create a pull request for this main repository.
 
+## Deploying
+
+Click this button to deploy the app to the DigitalOcean App Platform. 
+
+[![Deploy to DigitalOcean](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/onovaes/node-cms-news/tree/main&refcode=c2dbff297295)
 
 ### TO-DOs
 
