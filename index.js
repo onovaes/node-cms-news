@@ -22,9 +22,17 @@ app.use(express.static('public'))
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json())
 
+
+// HELLO WORKD teste
+app.get("/hello", function(req,res){
+    res.send('hello word');
+})
+
+
 // USE CONTROLLERS
 app.use("/",categoriesController);
 app.use("/",articlesController);
+
 
 
 // ADMIN HOME
